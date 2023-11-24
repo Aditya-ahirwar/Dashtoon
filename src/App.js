@@ -34,7 +34,7 @@ return (
         <textarea className='text-area'
             value={first}
             onChange={(e) => setFirst(e.target.value)}
-            placeholder="Enter text for each panel..."
+            placeholder="Enter text..."
             rows="1"
             cols = "30"
             
@@ -43,7 +43,7 @@ return (
         <textarea className='text-area'
             value={second}
             onChange={(e) => setSecond(e.target.value)}
-            placeholder="Enter text for each panel..."
+            placeholder="Enter text..."
             rows="1"
             cols = "30"
         />
@@ -51,7 +51,7 @@ return (
         <textarea className='text-area'
             value={third}
             onChange={(e) => setThird(e.target.value)}
-            placeholder="Enter text for each panel..."
+            placeholder="Enter text..."
             rows="1"
             cols = "30"
         />
@@ -59,7 +59,7 @@ return (
         <textarea className='text-area'
             value={fourth}
             onChange={(e) => setFourth(e.target.value)}
-            placeholder="Enter text for each panel..."
+            placeholder="Enter text..."
             rows="1"
             cols = "30"
         />
@@ -67,7 +67,7 @@ return (
         <textarea className='text-area'
             value={fifth}
             onChange={(e) => setFifth(e.target.value)}
-            placeholder="Enter text for each panel..."
+            placeholder="Enter text..."
             rows="1"
             cols = "30"
         />
@@ -75,7 +75,7 @@ return (
         <textarea className='text-area'
             value={sixth}
             onChange={(e) => setSixth(e.target.value)}
-            placeholder="Enter text for each panel..."
+            placeholder="Enter text..."
             rows="1"
             cols = "30"
         />
@@ -83,7 +83,7 @@ return (
         <textarea className='text-area'
             value={seventh}
             onChange={(e) => setSeventh(e.target.value)}
-            placeholder="Enter text for each panel..."
+            placeholder="Enter text..."
             rows="1"
             cols = "30"
         />
@@ -91,7 +91,7 @@ return (
         <textarea className='text-area'
             value={eight}
             onChange={(e) => setEight(e.target.value)}
-            placeholder="Enter text for each panel..."
+            placeholder="Enter text..."
             rows="1"
             cols = "30"
         />
@@ -99,7 +99,7 @@ return (
         <textarea className='text-area'
             value={ninth}
             onChange={(e) => setNinth(e.target.value)}
-            placeholder="Enter text for each panel..."
+            placeholder="Enter text..."
             rows="1"
             cols = "30"
         />
@@ -108,7 +108,7 @@ return (
         <textarea className='text-area'
             value={tenth}
             onChange={(e) => setTenth(e.target.value)}
-            placeholder="Enter text for each panel..."
+            placeholder="Enter text..."
             rows="1"
             cols = "30"
         />
@@ -122,7 +122,7 @@ return (
 
     <div className='result'>
         {
-            !ready ? <div>Comic Panels will be shown here...</div> :  final.map((text, index) => (
+            !ready ? <div style={{"color":"white"}}>Comic Panels will be shown here...</div> :  final.map((text, index) => (
             
             (text !== '') &&  
             <Panel key={index} val={text} />
@@ -130,7 +130,6 @@ return (
         
         }
   </div>
-  {/* {ready && <Panel val = {final}/>} */}
 
 </div>
 );
